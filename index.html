@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "UTF-8">
+  <meta name = "viewport" content = "width = device-width, initial-scale = 1.0"> <!-- Sets width to follow the screen-width of the device and initial zoom level. Respensive meta tag -->
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"> <!-- The X-UA-Compatible meta tag allows web authors to choose what version of Internet Explorer the page should be rendered as. -->
+  <title>Face Recognition with Javascript</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      width: 100vw;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    canvas {
+      position: absolute; /* Allows for canvas element to be overlayed over video */
+    }
+
+  </style>
+  <!-- defer: A script that will not run until after the page has loaded -->
+  <script defer src = "face-api.min.js"></script>
+  <script defer src = "face-recognition.js"></script>
+</head>
+<body>
+  <video id = "face-recognition-video-input" width = "720" height = "560" autoplay muted>
+</body>
+</html>
